@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GrenobleActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        >
+        <TextClock
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextClock>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/resultCompteur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="vous avez 10 clics permis">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/appartCompteur"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/app_gre_1"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="205dp" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/app_gre_2"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="205dp" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/app_gre_3"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="205dp" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/app_gre_4"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="205dp" />
+</LinearLayout>

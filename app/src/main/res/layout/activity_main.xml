@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/grenobleTitre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/grenoble" />
+
+    <ImageView
+        android:id="@+id/grenobleImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/grenoble"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="-89dp"
+        tools:layout_editor_absoluteY="217dp" />
+    <TextView
+        android:id="@+id/grenobleDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/paragraph" />
+
+
+    <TextView
+        android:id="@+id/marseilleTitre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/marseille" />
+
+    <ImageView
+        android:id="@+id/MarseilleImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00300F0F"
+        android:src="@drawable/marseille"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="-89dp"
+        tools:layout_editor_absoluteY="217dp" />
+    <TextView
+        android:id="@+id/marseille"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/paragraph" />
+
+</LinearLayout>
