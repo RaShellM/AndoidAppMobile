@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,48 +8,64 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/grenobleTitre"
+        android:id="@+id/activity_identifiant_identif_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="@string/grenoble" />
+        android:layout_weight="2"
+        android:textColor="@color/colorPersoR"
+        android:textSize="30sp"
+        android:text="POUR VISUALISEZ VOTRE PROCHAIN APPART EN 3D, merci de vous identifier"
+        android:gravity="center">
+    </TextView>
 
-    <ImageView
-        android:id="@+id/grenobleImg"
+    <EditText
+        android:id="@+id/activity_identifiant_identif_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/grenoble"
-        android:visibility="visible"
-        tools:layout_editor_absoluteX="-89dp"
-        tools:layout_editor_absoluteY="217dp" />
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+
+        android:hint="identifiant">
+    </EditText>
+
+    <Button
+        android:id="@+id/activity_identifiant_identif_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:text="Valider"></Button>
+
     <TextView
-        android:id="@+id/grenobleDesc"
+        android:id="@+id/activity_identifiant_jouer_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="@string/paragraph" />
+        android:layout_weight="2"
+        android:textColor="@color/colorPersoR"
+        android:textSize="30sp"
+        android:text="TESTEZ VOS CONNAISSANCE SUR LE PARC LOCATIF GRENOBLOIS"
+        android:gravity="center">
+    </TextView>
 
+    <Button
+        android:id="@+id/activity_game_jouer_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:text="JOUEZ AU QUIZZ"></Button>
 
-    <TextView
-        android:id="@+id/marseilleTitre"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/activity_identifiant_info_button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="@string/marseille" />
+        android:layout_margin="30dp"
+        android:padding="30dp"
+        android:onClick="chante"
+        android:layout_gravity="center"
+        android:text="Info RGPD qui chante"></Button>
 
-    <ImageView
-        android:id="@+id/MarseilleImg"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#00300F0F"
-        android:src="@drawable/marseille"
-        android:visibility="visible"
-        tools:layout_editor_absoluteX="-89dp"
-        tools:layout_editor_absoluteY="217dp" />
-    <TextView
-        android:id="@+id/marseille"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/paragraph" />
 
 </LinearLayout>

@@ -6,12 +6,15 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/activity_identifiant_identif_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Votre identifiant ici">
+        android:text="Votre identifiant ici"
+        android:gravity="center">
     </TextView>
 
     <EditText
+        android:id="@+id/activity_identifiant_identif_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
@@ -20,11 +23,21 @@
     </EditText>
 
     <Button
+        android:id="@+id/activity_identifiant_identif_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
         android:padding="10dp"
         android:layout_gravity="center"
         android:text="Valider"></Button>
+
+    <Button
+        android:id="@+id/activity_identifiant_location_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:padding="30dp"
+        android:layout_gravity="bottom"
+        android:text="POUR aller à la page de location directement"></Button>
 
 </LinearLayout>
