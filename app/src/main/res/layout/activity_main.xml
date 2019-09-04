@@ -1,50 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".Controller.MainActivity">
 
     <TextView
-        android:id="@+id/activity_identifiant_identif_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="2"
-        android:textColor="@color/colorPersoR"
-        android:textSize="30sp"
-        android:text="POUR VISUALISEZ VOTRE PROCHAIN APPART EN 3D, merci de vous identifier"
+        android:layout_weight="4"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:text="PARC LOCATIF GRENOBLOIS"
         android:gravity="center">
     </TextView>
 
-    <EditText
-        android:id="@+id/activity_identifiant_identif_input"
+    <ImageView
+        android:id="@+id/imageApp"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_weight="4"
+        android:src="@drawable/imageapp"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="205dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="Votre identifiant"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"></TextView>
+
+        <EditText
+            android:id="@+id/activity_identifiant_identif_input"
+            android:layout_width="231dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="2"
+            android:hint="identifiant"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:layout_marginStart="20dp"
+        android:orientation="horizontal">
 
-        android:hint="identifiant">
-    </EditText>
+        <TextView
+            android:id="@+id/activity_identifiant_identif_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="NOS APPARTS en 3D"
+            android:textColor="@color/colorPersoR"
+            android:textSize="20sp"></TextView>
 
-    <Button
+        <Button
         android:id="@+id/activity_identifiant_identif_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+            android:layout_weight="1"
         android:layout_margin="30dp"
         android:padding="10dp"
-        android:layout_gravity="center"
-        android:text="Valider"></Button>
+        android:text="VISUALISEZ"></Button>
+    </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
     <TextView
         android:id="@+id/activity_identifiant_jouer_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="2"
+        android:layout_weight="1"
         android:textColor="@color/colorPersoR"
-        android:textSize="30sp"
-        android:text="TESTEZ VOS CONNAISSANCE SUR LE PARC LOCATIF GRENOBLOIS"
+        android:textSize="20sp"
+        android:text="LE PARC LOCATIF GRENOBLOIS"
         android:gravity="center">
     </TextView>
 
@@ -55,17 +100,19 @@
         android:layout_margin="30dp"
         android:padding="10dp"
         android:layout_gravity="center"
-        android:text="JOUEZ AU QUIZZ"></Button>
+        android:text="TESTEZ VOS CONNAISSANCES"></Button>
+    </LinearLayout>
 
     <Button
         android:id="@+id/activity_identifiant_info_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
-        android:padding="30dp"
+        android:layout_gravity="left"
+        android:layout_margin="10dp"
         android:onClick="chante"
-        android:layout_gravity="center"
-        android:text="Info RGPD qui chante"></Button>
+        android:text="i"
+        android:textSize="2dp"
+        android:background="@drawable/infobulle"></Button>
 
 
 </LinearLayout>

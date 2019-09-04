@@ -1,4 +1,4 @@
-package com.example.appandroidrachou;
+package com.example.appandroidrachou.Controller;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.appandroidrachou.GrenobleActivity;
+import com.example.appandroidrachou.R;
 
 public class LocationActivity extends AppCompatActivity {
     private ImageView gre;

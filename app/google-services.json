@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "516706253623",
+    "firebase_url": "https://appandroidrachou.firebaseio.com",
+    "project_id": "appandroidrachou",
+    "storage_bucket": "appandroidrachou.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516706253623:android:cd79992fd810a6f4",
+        "android_client_info": {
+          "package_name": "com.example.appandroidrachou"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "516706253623-md9ovk71ki3butfhdg2avr8ae8no16hb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.appandroidrachou",
+            "certificate_hash": "ef8c51a45b8476caf9c31b336c74d76e94f0b9f0"
+          }
+        },
+        {
+          "client_id": "516706253623-otlnh224bcjmar6nlgssqf617utp5lru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7a9ZYUKUrakVlAb1Q2EPb_xTbjXC6x7A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "516706253623-otlnh224bcjmar6nlgssqf617utp5lru.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

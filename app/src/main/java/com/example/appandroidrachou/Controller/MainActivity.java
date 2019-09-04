@@ -1,4 +1,4 @@
-package com.example.appandroidrachou;
+package com.example.appandroidrachou.Controller;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,10 +12,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.example.appandroidrachou.Controller.GameActivity;
 import com.example.appandroidrachou.Model.User;
-
-import java.util.List;
+import com.example.appandroidrachou.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
     private MediaPlayer audio;
     private Button mGameButton;
     private MediaPlayer audiosiffle;
-
     private User mUser;
 
 
@@ -38,18 +35,20 @@ public class MainActivity extends AppCompatActivity {
         // INSTANCIATIONS
         mIdentifMessage = (TextView) findViewById(R.id.activity_identifiant_identif_text);
         mIdentifInput = (EditText) findViewById(R.id.activity_identifiant_identif_input);
+            //identif B
         mIdentifButton = (Button) findViewById(R.id.activity_identifiant_identif_button);
-            //game
+            //game B
         mGameButton = (Button) findViewById(R.id.activity_game_jouer_button);
-            //info
+            //info B
         mInfoButton = (Button) findViewById(R.id.activity_identifiant_info_button);
             //audio
         audio = MediaPlayer.create(getApplicationContext(), R.raw.sncf);
         mUser = new User("default");
 
-        //METHODE identif
+        //Bouton initalisés inaccessibles
         mIdentifButton.setEnabled(false);
-        //METHODE Listener sur input identif
+        mGameButton.setEnabled(false);
+        //M Listener sur Identification Remplie
         mIdentifInput.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -57,22 +56,26 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 mIdentifButton.setEnabled(s.toString().length()>3);
+                mGameButton.setEnabled(s.toString().length()>3);
             }
             @Override
             public void afterTextChanged(Editable s) {
             }
         });
-        //METHODE aller vers LOCATION
+
+        //M aller vers LOCATION
         mIdentifButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mUser.setIdentifiant(mIdentifInput.getText().toString());
+                String inputPrenom = mIdentifInput.getText().toString();
+                mUser.setIdentifiant(inputPrenom);
+                //button clicked
                 Intent pageLocation = new Intent(getApplicationContext(), LocationActivity.class);
                 startActivity(pageLocation);
                 finish();
             }
         });
-        //METHODE aller vers game
+        //M aller vers GAME
        mGameButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

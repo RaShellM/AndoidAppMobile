@@ -3,45 +3,37 @@ package com.example.appandroidrachou.Model;
 import java.util.List;
 
 public class Question {
-
-    private String mQuestion;
-
-            public Question(String question) {
-                mQuestion = question;
-            }
-
-            public String getQuestion() {
-                return mQuestion;
-            }
-
-            public void setQuestion(String question) {
-                mQuestion = question;
-            }
-
+//les variables
+    private String mQuestionText;
     private List<String> mChoiceList;
+    private int mAnswerIndex;
+//le constructeur
+    public Question(String question, List<String> choiceList, int answerIndex) {
+        mQuestionText = question;
+        mChoiceList = choiceList;
+        mAnswerIndex = answerIndex;
+    }
+//get et set de v Question
+    public String getQuestionText() {
+        return mQuestionText;
+    }
+    public void setQuestionText(String questionText) {
+        mQuestionText = questionText;
+    }
 
-            public Question(List<String> choiceList) {
-                mChoiceList = choiceList;
-            }
-
-            public void setChoiceList(List<String> choiceList) {
-                mChoiceList = choiceList;
-            }
-            public List<String> getChoiceList() {
+    //set et get de la v ChoiceList
+    public void setChoiceList(List<String> choiceList) { mChoiceList = choiceList; }
+    public List<String> getChoiceList() {
                 return mChoiceList;
             }
-
-    private int mAnswerIndex;
-
-            public Question(int answerIndex) {
-                mAnswerIndex = answerIndex;
-            }
-
-            public int getAnswerIndex() {
+//get et set de v AnswerIndex
+    public int getAnswerIndex() {
                 return mAnswerIndex;
             }
-
-            public void setAnswerIndex(int answerIndex) {
+    public void setAnswerIndex(int answerIndex) {
+        if (answerIndex<0 || answerIndex >= mChoiceList.size()){
+            throw new IllegalArgumentException("Answer index is out of bound");
+        }
                 mAnswerIndex = answerIndex;
             }
 }

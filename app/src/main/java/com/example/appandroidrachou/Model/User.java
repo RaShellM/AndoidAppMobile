@@ -5,10 +5,6 @@ public class User {
 
     private String mIdentifiant;
 
-    public User(String mIdentifiant) {
-        this.mIdentifiant = mIdentifiant;
-    }
-
     public String getIdentifiant() {
         return mIdentifiant;
     }
@@ -16,10 +12,14 @@ public class User {
     public void setIdentifiant(String identifiant) {
         mIdentifiant = identifiant;
     }
+    public User(String identifiant) {
+        mIdentifiant = identifiant;
+    }
 
-
-
-
-
-
+    @Override
+    public String toString() {
+        return "User{" +
+                "mIdentifiant='" + mIdentifiant + '\'' +
+                '}';
+    }
 }
